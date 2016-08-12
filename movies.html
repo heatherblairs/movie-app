@@ -1,0 +1,6 @@
+ <div ng-repeat="movie in movieResults">
+  <a ui-sref="home.detail({movieID: movie.imdbID})">
+    <h3>{{movie.Title}}</h3>
+  </a>
+  <img ng-src="{{ movie.Poster }}" alt="movie poster">
+ </div>
